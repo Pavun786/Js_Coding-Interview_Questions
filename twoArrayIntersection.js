@@ -26,6 +26,8 @@
 
    const set1 = new Set(arr1)
 
+   console.log(set1)
+
    const res = arr2.filter((item)=> set1.has(item))
 
    return [...new Set(res)]
