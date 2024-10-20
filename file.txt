@@ -1,0 +1,57 @@
+// console.log("one",!"hello") // false
+// console.log("two",+false)   //0
+
+// console.log("" == false)   //true
+// console.log("" === false)  //false
+
+
+// console.log(NaN == NaN)  //false
+// console.log(NaN === NaN)// false
+
+//Note : One of the key characteristics of NaN is that it is not equal to itself.
+
+//console.log(typeof typeof 1000 ) // string..bcz, typeof 1000 ==> Number..here Number is word
+
+// function foo(){
+  
+   
+//   let xyz = 100;
+   
+//   console.log(xyz)
+   
+//   }
+  
+//   console.log(foo())  
+//o/p:  
+// 100
+// undefined
+
+// var xyz = 1 + abc;
+// abc = 100;
+// console.log(xyz)  //101
+
+
+// const obj = {
+  
+//     "name" : "pavun"
+//   }
+  
+// let arr =[1,2,3,4]
+
+// console.log(delete obj)  //false
+// console.log(delete arr)  //false
+// console.log(delete arr[1]) //true
+// console.log(arr) // [1,empty,3,4]
+// console.log(typeof arr[1]) //undefined
+
+// const a=[];
+// const b=[];
+
+// console.log(a == b)  //false
+// console.log(a === b)  //false
+
+// In JavaScript, when comparing arrays (or objects) using == (loose equality) or === (strict equality), 
+// it checks for reference equality, not value equality. This means it checks whether the two variables point to the same object in memory, rather than comparing their contents.
+
+
+
