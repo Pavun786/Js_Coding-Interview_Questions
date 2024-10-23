@@ -55,3 +55,194 @@
 
 
 
+
+//============================================================================
+
+
+// function one(){
+   
+//     return 10;
+//   }
+   
+//   function two(){
+    
+//     return 20;
+//     } 
+
+
+// let a = (one(),two())
+
+// console.log(a)  //20 .because,the 10 was replaced by 20
+
+
+// let arr =["one","two","three"]
+
+// let str = "hello"
+
+
+// console.log(arr.includes("on"))    //false
+// console.log(arr.includes("onetwo"))  //false
+// console.log(str.includes("ll"))    //true
+
+//bcz,include will work in array or string
+
+
+// let a =10;
+
+// let b = new Number(10)
+
+// console.log(typeof b)  //object
+// console.log(a===b)   //false  //because,it checks the both references
+//console.log(JSON.stringify([2]) == JSON.stringify([2])) // true
+//console.log(typeof JSON.stringify([2])) //string
+
+
+// let obj1 = {"name" : "pavun"}
+
+// let obj2 = {...obj1}
+
+// obj2.name = "selva"
+
+// console.log(obj1)  // {"name" : "pavun"}
+
+
+// let obj1 = {"name" : "pavun"}
+
+// let obj2 = obj1;
+
+// obj2.name = "selva"
+
+// console.log(obj1)  // {"name" : "selva"}
+
+ 
+ 
+ //console.log(!"xyz")  //false..initialay its a truthy value.after it inverted
+ 
+ 
+ 
+ //Flatern Array
+ 
+// let arr = [[1,2],3,[4,5],6]
+
+// function flat(arr){
+   
+//   let temp=[];
+   
+//   for(let i=0;i<arr.length;i++){
+     
+//       if(Array.isArray(arr[i])){
+        
+//       let res = flat(arr[i])
+        
+//         temp=[...temp,...res]
+        
+      
+//       } else{
+        
+//         temp.push(arr[i])
+        
+//       }
+     
+//     }
+    
+//     return temp;
+   
+//   }
+ 
+// console.log(flat(arr))  //[1,2,3,4,5,6]
+
+
+
+
+// select tag Vs datalist tag:
+
+// <select> is used for creating dropdown lists where users can select one or more options from a predefined set, 
+// while <datalist> is used to provide suggestions for input fields, allowing users to select from a list or input their own value.
+
+
+//Empty-element:
+// Some HTML elements have no content (like the <br> element). 
+// These elements are called empty elements. 
+// Empty elements do not have an end tag!
+
+
+//bold Vs italic:
+// Both gives visual output same, but bold tag is a physical tag & strong tag is a logical tag. 
+// Basically when bold tag is used, it only makes the words thicker... 
+// But when strong tag is used, it makes the word thicker & also tells the Browser that the text inside "strong" tag is important.
+
+
+
+
+//=================================================================================================================
+
+ console.log(a)  //undefined
+ 
+ console.log(b)  // error b-is dot defined
+ 
+ var a = b = 5;
+
+
+  //console.log(typeof("4" * 5 + 2))  //22
+
+
+// let arr =["b","a","d","c"] 
+
+// for(let i=0;i<arr.length;i++){
+  
+//     for(let j=i;j<arr.length;j++){
+      
+//       if(arr[i] > arr[j+1]){
+         
+//         let temp = arr[i];
+         
+//         arr[j] =  arr[j+1]
+         
+//         arr[j+1] = temp;
+         
+//         }  
+      
+//     }
+  
+//   }
+  
+//   console.log(arr)
+
+
+//Longest word
+
+// let str ="I am Pavunkumar from chennai".split(" ")
+// let res;
+// let len = 0;
+
+// for(let i=0;i<str.length;i++){
+  
+//     if(len < str[i].length){
+      
+//       res = str[i]
+       
+//       len = res.length
+      
+//       }
+     
+//   }
+  
+//   console.log(res)  //"Pavunkumar"
+
+
+
+//factorial of number
+
+// let num = 5;
+
+//   function find(num){
+  
+//     if(num <=1){
+      
+//       return 1;  
+//     }
+  
+//     return num * find(num-1)
+//   }
+  
+//   console.log(find(num)) //120
